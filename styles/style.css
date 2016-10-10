@@ -1,18 +1,16 @@
 @import url(http://reset5.googlecode.com/hg/reset.min.css);
-@font-face {
-    font-family: 'AvantGardeBold';
-    src: url('../fonts/ITCAvantGardeStd-Bold.otf');
-    font-weight: bold;
-}
+
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: sans-serif;
+	font-weight: 300;
 }
 
 h1, h2 {
-	font-family: 'AvantGardeBold',  Helvetica Neue, Helvetica, Arial, sans-serif;;
+	font-family: sans-serif;
+	font-weight: 700;
 }
 
 .header-link {
@@ -53,16 +51,17 @@ h1, h2 {
 
 .section .content h2 {
 	font-size: 18px;
-	margin: 0 0 15px 0;
+	margin: 0 0 10px 0;
 }
 .section .content h3 {
 	font-size: 13px;
-	font-weight: normal;
+	font-weight: 300;
+	margin: 5px 0;
 }
 .section .content p {
 	font-size: 13px;
-	margin-top: 25px;
-	line-height: 18px;
+	margin: 20px 0 0 0;
+	line-height: 22px;
 }
 
 .gray {
@@ -86,11 +85,11 @@ h1, h2 {
 /*---- Banner Styles ----*/
 
 .section.banner {
-	background-image: url(../images/desk2.jpg);
+	background-image: url(http://i.imgur.com/hWyeJvh.jpg);
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 100%;
+    height: 90%;
 }
 
 .section.banner .content {
@@ -106,25 +105,43 @@ h1, h2 {
 	margin: 30px 0;
 }
 
-.section.banner .content a {
-	padding: 8px 12px;
-	font-size: 11px;
+.section.banner .content .btn-primary {
+	font-size: 13px;
+	padding: 10px 15px;
 	font-weight: bold;
-	border: 1px solid #fff;
-	border-radius: 3px;
-	color: #ffffff;
+	background: #fff;
+	border-radius: 8px;
+	color: #333;
 	text-decoration: none;
 	background-color: none;
-	opacity: 0.7;
 	transition: all 0.5s ease;
    -moz-transition: all 0.5s ease;
    -webkit-transition: all 0.5s ease;
 }
 
-.section.banner .content a:hover {
-	background-color: #ffffff;
-	color: #000000;
+.section.banner .content .btn-primary:hover {
+	opacity: 0.7;
 }
+
+.section.banner .content .btn-secondary {
+	font-size: 13px;
+	padding: 10px 15px;
+	font-weight: bold;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 8px;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: none;
+	margin-left: 10px;
+	transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+}
+
+.section.banner .content .btn-secondary:hover {
+	background: rgba(255, 255, 255, 0.3);
+}
+
 
 /*---- Duolingo Dashboard Section ----*/
 
@@ -210,7 +227,7 @@ h1, h2 {
 /*---- MAYA Section ----*/
 
 .section.maya, .maya a {
-	background-color: #98D6E0;
+	background-color: #6ab9c5;
 	color: #ffffff;
 }
 
@@ -231,12 +248,15 @@ h1, h2 {
 	.section.banner .content {
 		padding: 30px 20px 70px 20px;
 	}
-
-	.section.banner .content a {
+	.section.banner .content .btn-primary {
+		min-width: 150px;
+	}
+	.section.banner .content .btn-primary, .section.banner .content .btn-secondary {
+		font-size: 15px;
+		padding: 10px 20px;
 		display: inline-block;
 		position: initial;
-		font-size: 13px;
-		padding: 10px 20px;
+		text-align: center;
 	}
 	.right {
 		float: right;
@@ -277,16 +297,15 @@ h1, h2 {
 	}
 	.section.banner .content h1 {
 		font-size: 48px;
-		line-height: 60px;
+		line-height: 70px;
 		margin: 0 0 70px 0;
 	}
 
 	.section .content h2 {
-		font-size: 22px;
+		font-size: 20px;
 	}
 	.section .content h3 {
 		font-size: 15px;
-		margin-bottom: 30px;
 	}
 	.section:nth-child(odd) .content .description {
 		margin-top: 60px;
@@ -294,7 +313,7 @@ h1, h2 {
 	.section .content p {
 		display: inline-block;
 		font-size: 15px;
-		line-height: 22px;
+		line-height: 24px;
 	}
 
 	.thumb-img {
