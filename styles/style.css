@@ -4,15 +4,17 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 }
 
 h1, h2 {
-	font-family: sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
 }
-
+a:hover {
+	color: inherit;
+}
 .header-link {
 	text-decoration: none;
 	color: initial;
@@ -28,7 +30,7 @@ h1, h2 {
 }
 
 .header-link:hover {
-	color: initial;
+	color: inherit;
 }
 
 .section {
@@ -54,19 +56,61 @@ h1, h2 {
 	margin: 0 0 10px 0;
 }
 .section .content h3 {
-	font-size: 13px;
+	font-size: 18px;
 	font-weight: 300;
 	margin: 5px 0;
 }
 .section .content p {
-	font-size: 13px;
+	font-size: 16px;
 	margin: 20px 0 0 0;
-	line-height: 22px;
+	line-height: 28px;
 }
 
 .gray {
 	color: #999;
 }
+
+
+/*Button Sytles*/
+
+.section .content .btn-primary {
+	font-size: 13px;
+	padding: 10px 15px;
+	font-weight: 400;
+	background: #fff;
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+	color: #333;
+	text-decoration: none;
+	background-color: none;
+	transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+}
+
+.section .content .btn-primary:hover {
+	opacity: 0.7;
+}
+
+.section .content .btn-secondary {
+	font-size: 13px;
+	padding: 10px 15px;
+	font-weight: 400;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 3px;
+	color: rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	background-color: none;
+	margin-left: 10px;
+	transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+   -webkit-transition: all 0.5s ease;
+}
+
+.section .content .btn-secondary:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
 
 /* ---- Header Styles ---- */
 
@@ -85,11 +129,13 @@ h1, h2 {
 /*---- Banner Styles ----*/
 
 .section.banner {
-	background-image: url(http://i.imgur.com/hWyeJvh.jpg);
+	background-color: #7195a9;
+/*	background-image: url(http://i.imgur.com/hWyeJvh.jpg);*/
 	background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 90%;
+    max-height: 700px;
 }
 
 .section.banner .content {
@@ -101,62 +147,52 @@ h1, h2 {
 
 .section.banner .content h1 {
 	font-size: 26px;
+	font-weight: 200;
 	line-height: 32px;
 	margin: 30px 0;
 }
+/*---- Uber Section ----*/
 
-.section.banner .content .btn-primary {
-	font-size: 13px;
-	padding: 10px 15px;
-	font-weight: bold;
-	background: #fff;
-	border-radius: 8px;
-	color: #333;
-	text-decoration: none;
-	background-color: none;
-	transition: all 0.5s ease;
-   -moz-transition: all 0.5s ease;
-   -webkit-transition: all 0.5s ease;
-}
-
-.section.banner .content .btn-primary:hover {
-	opacity: 0.7;
-}
-
-.section.banner .content .btn-secondary {
-	font-size: 13px;
-	padding: 10px 15px;
-	font-weight: bold;
-	border: 2px solid rgba(255, 255, 255, 0.5);
-	border-radius: 8px;
+.section.uber {
+	background-color: #414552;
+	background-image:url(../images/uber.gif);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
 	color: #ffffff;
-	text-decoration: none;
-	background-color: none;
-	margin-left: 10px;
-	transition: all 0.5s ease;
-   -moz-transition: all 0.5s ease;
-   -webkit-transition: all 0.5s ease;
 }
 
-.section.banner .content .btn-secondary:hover {
-	background: rgba(255, 255, 255, 0.3);
+.section.uber h2 {
+	color: #ffffff;
+}
+.section.uber h3 {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.uber-thumb {
+	width: 300px;
+	height: 210px;
+	display: block;
+	margin: 30px auto 0 auto;
+}
+.uber-thumb.thumb-img {
+	box-shadow: none;
 }
 
 
 /*---- Duolingo Dashboard Section ----*/
 
 .section.duodashboard {
-	background-color: #ffffff;
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e9f9ff));
-	background: -webkit-linear-gradient(top, #fff, #e9f9ff);
-	background: -moz-linear-gradient(top, #fff, #e9f9ff);
-	background: -ms-linear-gradient(top, #fff, #e9f9ff);
-	background: -o-linear-gradient(top, #fff, #e9f9ff);
+	background-color: #e0fbff;
 	color: #000;
 }
 
 .section.duodashboard h2 {
-	color: #1caff6;
+	color: rgba(0,0,0,.6);
+}
+
+.section.duodashboard h3 {
+	color: rgba(0,0,0,.5);
 }
 
 .duodashboard-thumb {
@@ -172,7 +208,7 @@ h1, h2 {
 /*---- Duolingo Website Section ----*/
 
 .section.duoweb {
-	background-color: #F5A623;
+	background-color: #6fb127;
 	color: #fff;
 }
 
@@ -189,7 +225,7 @@ h1, h2 {
 /*---- Duolingo Email Section ----*/
 
 .section.email {
-	background-color: #fff;
+	background-color: #f1f0e5;
 	color: #000;
 	border-bottom: 1px solid #eee;
 }
@@ -241,10 +277,38 @@ h1, h2 {
 	margin: 30px auto 0 auto;
 }
 
+/*---- Footer section ----*/
+
+.section.footer, .footer a {
+	background-color: #383a40;
+	color: #eeeeee;
+	text-align: center;
+}
+
+.section.footer .content {
+	padding: 70px 0 100;
+}
+
+.section.footer .content p {
+	display: block;
+}
+
+.sean {
+	display: inline-block;
+	margin: 0 auto;
+	background-image:url(../images/sean.jpg);
+	background-position: center top;
+	background-size: 150px;
+	border-radius: 100px;
+	height:100px;
+	width: 100px;
+
+}
+
 
 /*---- Responsiveness ----*/
 
-@media (min-width: 940px) {
+@media (min-width: 640px) {
 	.section.banner .content {
 		padding: 30px 20px 70px 20px;
 	}
@@ -252,7 +316,7 @@ h1, h2 {
 		min-width: 150px;
 	}
 	.section.banner .content .btn-primary, .section.banner .content .btn-secondary {
-		font-size: 15px;
+		font-size: 18px;
 		padding: 10px 20px;
 		display: inline-block;
 		position: initial;
@@ -267,7 +331,7 @@ h1, h2 {
 		float: right;
 	}
 	.section .content, .section .header {
-		width: 940px;
+		width: 1070px;
 		margin: 0 auto;
 		height: auto;
 		vertical-align: middle;
@@ -276,11 +340,11 @@ h1, h2 {
 	.section .content > div {
 		width: 45.5%;
 		vertical-align: middle;
-		margin: 0 2%;
+		margin: 0 3%;
 	}
 
 	.section .content .description {
-		width: 380px;
+		width: 450px;
 	}
 
 	.section .content .description.right {
@@ -296,24 +360,24 @@ h1, h2 {
 		background-size: 140px;
 	}
 	.section.banner .content h1 {
-		font-size: 48px;
+		font-size: 64px;
 		line-height: 70px;
 		margin: 0 0 70px 0;
 	}
 
 	.section .content h2 {
-		font-size: 20px;
+		font-size: 26px;
 	}
 	.section .content h3 {
-		font-size: 15px;
+		font-size: 22px;
 	}
 	.section:nth-child(odd) .content .description {
 		margin-top: 60px;
 	}
 	.section .content p {
 		display: inline-block;
-		font-size: 15px;
-		line-height: 24px;
+		font-size: 18px;
+		line-height: 34px;
 	}
 
 	.thumb-img {
@@ -324,5 +388,11 @@ h1, h2 {
 		display: inline-block;
 		margin: 50px auto 0 auto;
 		box-shadow: 0 260px 140px 0px rgba(0, 0, 0, 0.2);
+	}
+	.section.uber {
+		background-position: center;
+	}
+	.uber-thumb {
+		height: 600px;
 	}
 }
