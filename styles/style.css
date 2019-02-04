@@ -129,7 +129,7 @@ a:hover {
 /*---- Banner Styles ----*/
 
 .section.banner {
-	background-color: #7195a9;
+	background-color: #21293c;
 /*	background-image: url(http://i.imgur.com/hWyeJvh.jpg);*/
 	background-size: cover;
     background-repeat: no-repeat;
@@ -155,7 +155,7 @@ a:hover {
 
 .section.uber {
 	background-color: #414552;
-	background-image:url(../images/uber.gif);
+	background-image:url(../images/uber-viz.gif);
     background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
